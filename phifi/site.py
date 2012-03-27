@@ -33,6 +33,8 @@ class Site(object):
             
     def __locateLoginForm(self):
         """Used to locate the form"""
+        if not self.__browser:
+            return False
         for form in self.__browser.forms():
             try:
                 form.find_control(type='password')
@@ -40,7 +42,7 @@ class Site(object):
                 self.__form = form
                 return
             except:
-                pass
+                continue
         if not self.__form: return False
         
             
@@ -55,7 +57,7 @@ class Site(object):
         try:
             self.__browser.submit().read()
             return True
-        except
+        except:
             return False
 
     def run(self):

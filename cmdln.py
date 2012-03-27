@@ -7,7 +7,7 @@ from phifi.manager import Manager
     
     
 if "--version" in sys.argv or "-v" in sys.argv:
-    print nolamer.__version__
+    print phifi.__version__
     sys.exit(0)
 
 if  len(sys.argv) == 0 or "--help" in sys.argv or "-h" in sys.argv:

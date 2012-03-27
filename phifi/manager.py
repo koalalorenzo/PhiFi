@@ -67,13 +67,13 @@ class Manager(object):
     def nuke_one_time(self, url):
         return self.__request_onetime(site)
 
-    def start_loop(self, site=None, target=None, volte=100):
+    def start_loop(self, site=None, target=None, times=100):
         if target:
             site = self.__return_random_site_by_target(target)
         
         elif site == None:
             site = self.__return_random_site()
         
-        for a in range(0,volte):
+        for a in range(0,times):
             self.__request_onetime(site)
         
