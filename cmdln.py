@@ -3,8 +3,6 @@
 
 import sys
 from phifi.manager import Manager
-
-    
     
 if "--version" in sys.argv or "-v" in sys.argv:
     print phifi.__version__
@@ -32,7 +30,7 @@ while 1:
         targhet = get_targhet(manager)
         break
     except:
-        sys.stdout.write("do not do it again\n")
+        sys.stdout.write("Do not do it again\n")
 
 while 1:
     print manager.nuke_one_time_random_by_target(targhet)

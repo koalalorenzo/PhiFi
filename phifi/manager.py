@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding=utf-8 -*-
 #
-#   Copyright 2011, 2012 Lorenzo Setale
-#   See: http://www.koalalorenzo.com/2011/04/13/ancora-lamerozzi/
+#   Copyright 2011, 2012, 2013 Lorenzo Setale
+#   See: http://blog.setale.me/2011/04/13/ancora-lamerozzi/
 #   Do not modify without Lorenzo's permissions.
 #   THIS SOFTWARE IS NOT OPENSOURCE!
 #
@@ -32,11 +32,6 @@ class Manager(object):
         self.database = json.loads(rawdecomp)
         self.__update_target_list()
         
-        #names_raw = urllib.urlopen("http://nolamer.com/names.it.db").read()
-        #for nome in names_raw:
-        #    nome = nome.replace("\n","")
-        #    self.fake_names.append(nome)
-
     def __return_random_site(self):
         return choice(self.database)
     

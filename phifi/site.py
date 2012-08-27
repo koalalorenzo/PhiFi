@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding=utf-8 -*-
 #
-#   Copyright 2011, 2012 Lorenzo Setale
-#   See: http://www.koalalorenzo.com/2011/04/13/ancora-lamerozzi/
+#   Copyright 2011, 2012, 2013 Lorenzo Setale
+#   See: http://blog.setale.me/2011/04/13/ancora-lamerozzi/
 #   Do not modify without Lorenzo's permissions.
 #   THIS SOFTWARE IS NOT OPENSOURCE!
 #   
